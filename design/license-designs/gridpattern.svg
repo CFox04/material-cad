@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%">
+  <defs>
+    <pattern id="pattern" width="14" height="14" viewBox="0 0 40,40" patternUnits="userSpaceOnUse" patternTransform="rotate(135) ">
+      <rect id="pattern-background" width="400%" height="400%" fill="rgba(255, 255, 255,1)"/>
+      <path fill="rgba(26, 32, 44,1)" d="M-10 3 h60 v2 h-60z"/>
+      <path fill="rgba(26, 32, 44,1)" d="M-10 43 h60 v2 h-60z"/>
+      <path fill="rgba(0, 0, 0,1)" d="M-10 29.5  h60 v1 h-60z"/>
+      <path fill="rgba(0, 0, 0,1)" d="M29.5 -10 v60 h1 v-60 z"/>
+      <path fill="rgba(26, 32, 44,1)" d="M9 -10 v60 h2 v-60 z"/>
+    </pattern>
+  </defs>
+  <rect fill="url(#pattern)" height="100%" width="100%"/>
+</svg>

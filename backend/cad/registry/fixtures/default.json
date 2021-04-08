@@ -1,0 +1,247 @@
+[
+    {
+        "model": "registry.vehiclecolor",
+        "pk": 1,
+        "fields": {
+            "name": "Black"
+        }
+    },
+    {
+        "model": "registry.vehiclecolor",
+        "pk": 2,
+        "fields": {
+            "name": "Gray"
+        }
+    },
+    {
+        "model": "registry.vehiclecolor",
+        "pk": 3,
+        "fields": {
+            "name": "Silver"
+        }
+    },
+    {
+        "model": "registry.vehiclecolor",
+        "pk": 4,
+        "fields": {
+            "name": "White"
+        }
+    },
+    {
+        "model": "registry.vehiclecolor",
+        "pk": 5,
+        "fields": {
+            "name": "Red"
+        }
+    },
+    {
+        "model": "registry.vehiclecolor",
+        "pk": 6,
+        "fields": {
+            "name": "Green"
+        }
+    },
+    {
+        "model": "registry.vehiclecolor",
+        "pk": 7,
+        "fields": {
+            "name": "Blue"
+        }
+    },
+    {
+        "model": "registry.vehiclecolor",
+        "pk": 8,
+        "fields": {
+            "name": "Yellow"
+        }
+    },
+    {
+        "model": "registry.vehiclecolor",
+        "pk": 9,
+        "fields": {
+            "name": "Orange"
+        }
+    },
+    {
+        "model": "registry.vehiclecolor",
+        "pk": 10,
+        "fields": {
+            "name": "Purple"
+        }
+    },
+    {
+        "model": "registry.vehiclecolor",
+        "pk": 11,
+        "fields": {
+            "name": "Pink"
+        }
+    },
+    {
+        "model": "registry.vehiclecolor",
+        "pk": 12,
+        "fields": {
+            "name": "Beige"
+        }
+    },
+    {
+        "model": "registry.vehiclecolor",
+        "pk": 13,
+        "fields": {
+            "name": "Brown"
+        }
+    },
+    {
+        "model": "registry.vehiclecolor",
+        "pk": 14,
+        "fields": {
+            "name": "Gold"
+        }
+    },
+    {
+        "model": "registry.weapontype",
+        "pk": 1,
+        "fields": {
+            "name": "Ceramic Pistol"
+        }
+    },
+    {
+        "model": "registry.weapontype",
+        "pk": 2,
+        "fields": {
+            "name": "Combat Pistol"
+        }
+    },
+    {
+        "model": "registry.weapontype",
+        "pk": 3,
+        "fields": {
+            "name": "Heavy Pistol"
+        }
+    },
+    {
+        "model": "registry.weapontype",
+        "pk": 4,
+        "fields": {
+            "name": "Marksman Pistol"
+        }
+    },
+    {
+        "model": "registry.weapontype",
+        "pk": 5,
+        "fields": {
+            "name": "Navy Revolver"
+        }
+    },
+    {
+        "model": "registry.weapontype",
+        "pk": 6,
+        "fields": {
+            "name": "Pistol"
+        }
+    },
+    {
+        "model": "registry.weapontype",
+        "pk": 7,
+        "fields": {
+            "name": "Pistol .50"
+        }
+    },
+    {
+        "model": "registry.weapontype",
+        "pk": 8,
+        "fields": {
+            "name": "SNS Pistol"
+        }
+    },
+    {
+        "model": "registry.weapontype",
+        "pk": 9,
+        "fields": {
+            "name": "Stun Gun"
+        }
+    },
+    {
+        "model": "registry.weapontype",
+        "pk": 10,
+        "fields": {
+            "name": "Vintage Pistol"
+        }
+    },
+    {
+        "model": "registry.weapontype",
+        "pk": 11,
+        "fields": {
+            "name": "Assault Shotgun"
+        }
+    },
+    {
+        "model": "registry.weapontype",
+        "pk": 12,
+        "fields": {
+            "name": "Bullpup Shotgun"
+        }
+    },
+    {
+        "model": "registry.weapontype",
+        "pk": 13,
+        "fields": {
+            "name": "Heavy Shotgun"
+        }
+    },
+    {
+        "model": "registry.weapontype",
+        "pk": 14,
+        "fields": {
+            "name": "Musket"
+        }
+    },
+    {
+        "model": "registry.weapontype",
+        "pk": 15,
+        "fields": {
+            "name": "Pump Shotgun"
+        }
+    },
+    {
+        "model": "registry.weapontype",
+        "pk": 16,
+        "fields": {
+            "name": "Sawed-Off Shotgun"
+        }
+    },
+    {
+        "model": "registry.weapontype",
+        "pk": 17,
+        "fields": {
+            "name": "Assault Rifle"
+        }
+    },
+    {
+        "model": "registry.weapontype",
+        "pk": 18,
+        "fields": {
+            "name": "Carbine Rifle"
+        }
+    },
+    {
+        "model": "registry.weapontype",
+        "pk": 19,
+        "fields": {
+            "name": "Advanced Rifle"
+        }
+    },
+    {
+        "model": "registry.weapontype",
+        "pk": 20,
+        "fields": {
+            "name": "Bullpup Rifle"
+        }
+    },
+    {
+        "model": "registry.weapontype",
+        "pk": 21,
+        "fields": {
+            "name": "Special Carbine"
+        }
+    }
+]

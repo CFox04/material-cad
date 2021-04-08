@@ -1,0 +1,137 @@
+[
+    {
+        "model": "civilian.haircolor",
+        "pk": 1,
+        "fields": {
+            "name": "Black"
+        }
+    },
+    {
+        "model": "civilian.haircolor",
+        "pk": 2,
+        "fields": {
+            "name": "Brown"
+        }
+    },
+    {
+        "model": "civilian.haircolor",
+        "pk": 3,
+        "fields": {
+            "name": "Blonde"
+        }
+    },
+    {
+        "model": "civilian.haircolor",
+        "pk": 4,
+        "fields": {
+            "name": "Red"
+        }
+    },
+    {
+        "model": "civilian.eyecolor",
+        "pk": 1,
+        "fields": {
+            "name": "Black"
+        }
+    },
+    {
+        "model": "civilian.eyecolor",
+        "pk": 2,
+        "fields": {
+            "name": "Blue"
+        }
+    },
+    {
+        "model": "civilian.eyecolor",
+        "pk": 3,
+        "fields": {
+            "name": "Brown"
+        }
+    },
+    {
+        "model": "civilian.eyecolor",
+        "pk": 4,
+        "fields": {
+            "name": "Green"
+        }
+    },
+    {
+        "model": "civilian.eyecolor",
+        "pk": 5,
+        "fields": {
+            "name": "Hazel"
+        }
+    },
+    {
+        "model": "civilian.eyecolor",
+        "pk": 6,
+        "fields": {
+            "name": "Grey"
+        }
+    },
+    {
+        "model": "civilian.sex",
+        "pk": 1,
+        "fields": {
+            "name": "Male",
+            "abbreviation": "M"
+        }
+    },
+    {
+        "model": "civilian.sex",
+        "pk": 2,
+        "fields": {
+            "name": "Female",
+            "abbreviation": "F"
+        }
+    },
+    {
+        "model": "civilian.race",
+        "pk": 1,
+        "fields": {
+            "name": "American Native or Alaskan Native",
+            "abbreviation": "A"
+        }
+    },
+    {
+        "model": "civilian.race",
+        "pk": 2,
+        "fields": {
+            "name": "Black or African American",
+            "abbreviation": "B"
+        }
+    },
+    {
+        "model": "civilian.race",
+        "pk": 3,
+        "fields": {
+            "name": "Hispanic or Latino",
+            "abbreviation": "H"
+        }
+    },
+    {
+        "model": "civilian.race",
+        "pk": 4,
+        "fields": {
+            "name": "Asian",
+            "abbreviation": "S"
+        }
+    },
+    {
+        "model": "civilian.race",
+        "pk": 5,
+        "fields": {
+            "name": "Pacific Islander",
+            "abbreviation": "P"
+        }
+    },
+    {
+        "model": "civilian.race",
+        "pk": 6,
+        "fields": {
+            "name": "White",
+            "abbreviation": "W"
+        }
+    }
+]
+
