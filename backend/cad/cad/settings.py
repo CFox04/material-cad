@@ -98,6 +98,7 @@ INSTALLED_APPS = [
     'civilian.apps.CivilianConfig',
     'ncic.apps.NcicConfig',
     'police.apps.PoliceConfig',
+    'rest_framework_simplejwt.token_blacklist'
 ]
 
 MIDDLEWARE = [
