@@ -11,46 +11,71 @@ import {
 } from "@material-ui/core";
 import PasswordField from "./PasswordField";
 import useStyles from "./style";
-import { axiosInstance } from "../axios";
+import { axiosInstance } from "../../axios";
 import { useHistory } from "react-router-dom";
 
 function Login() {
+    // Need history to redirect user to / once logged in
     const history = useHistory();
     const initialFormData = Object.freeze({
         email: "",
         password: "",
     });
 
-    const [formData, updateFormData] = useState(initialFormData);
+    const [state, setState] = useState({
+        formData: initialFormData,
+        message: false,
+    });
 
     const handleChange = (e) => {
-        updateFormData({
-            ...formData,
-            // Trimming any whitespace
-            [e.target.name]: e.target.value.trim(),
+        setState({
+            formData: {
+                ...state.formData,
+                // Trimming any whitespace
+                [e.target.name]: e.target.value.trim(),
+            },
         });
+    };
+
+    const stringIsEmpty = (string) => {
+        return string.length === 0 || !string.trim();
     };
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(formData);
+
+        // Validate form
+        if (
+            stringIsEmpty(state.formData.email) ||
+            stringIsEmpty(state.formData.password)
+        ) {
+            setState({ message: "Please enter both your email and password." });
+            return;
+        }
 
         axiosInstance
+            // Request JWT tokens given the email and password
             .post(`token/`, {
-                email: formData.email,
-                password: formData.password,
+                email: state.formData.email,
+                password: state.formData.password,
             })
             .then((res) => {
+                // Set the tokens in local storage
                 localStorage.setItem("access_token", res.data.access);
                 localStorage.setItem("refresh_token", res.data.refresh);
+                // Set authorization header of the axios instance
                 axiosInstance.defaults.headers["Authorization"] =
                     "JWT" + localStorage.getItem("access_token");
-                // Wait for token to set before redirecting
-                setTimeout(() => {
-                    history.push("/");
-                }, 100);
-                // console.log(res);
-                // console.log(res.data);
+                history.push("/");
+            })
+            .catch((err) => {
+                if (err.response) {
+                    if (err.response.status === 401) {
+                        setState({
+                            message: "Incorrect email and/or password",
+                        });
+                    }
+                }
             });
     };
 
@@ -70,6 +95,9 @@ function Login() {
                     MDT/CAD SYSTEM
                 </Typography>
                 <form className={classes.form} noValidate>
+                    {state.message && (
+                        <span className={classes.error}>{state.message}</span>
+                    )}
                     <TextField
                         variant="filled"
                         margin="normal"
@@ -85,10 +113,10 @@ function Login() {
                     <PasswordField
                         textFieldProps={{ onChange: handleChange }}
                     />
-                    <FormControlLabel
+                    {/* <FormControlLabel
                         control={<Checkbox value="remember" color="primary" />}
                         label="Remember me"
-                    />
+                    /> */}
                     <Button
                         type="submit"
                         fullWidth

@@ -11,4 +11,6 @@ app_name = 'user'
 # The API URLs are now determined automatically by the router.
 urlpatterns = [
     path('register/', views.RegisterUser.as_view(), name="register_user"),
+    path('logout/blacklist/',
+         views.BlacklistTokenUpdateView.as_view(), name="blacklist")
 ]

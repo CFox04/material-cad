@@ -3,8 +3,8 @@ from . import models
 
 
 class CharacterSerializer(serializers.HyperlinkedModelSerializer):
-    user = serializers.HyperlinkedRelatedField(
-        view_name='user-detail', read_only=True)
+    #user = serializers.HyperlinkedRelatedField(
+        #view_name='user-detail', read_only=True)
 
     class Meta:
         model = models.Character

@@ -7,6 +7,7 @@ class GroupPermsModelViewSet(viewsets.ModelViewSet):
     permission_classes = [HasGroupPermission]
 
     def get_queryset(self):
+        print(self.request)
         # Get required groups for GET requests
         if 'GET' in self.required_groups and self.request.user.is_authenticated:
             required_groups = self.required_groups['GET']

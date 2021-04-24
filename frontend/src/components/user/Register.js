@@ -9,7 +9,7 @@ import {
 } from "@material-ui/core";
 import PasswordField from "./PasswordField";
 import useStyles from "./style";
-import { axiosInstance } from "../axios";
+import { axiosInstance } from "../../axios";
 import { useHistory } from "react-router-dom";
 
 function Register() {

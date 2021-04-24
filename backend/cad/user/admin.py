@@ -4,6 +4,7 @@ from django.contrib.auth.admin import UserAdmin
 from django.forms import TextInput, Textarea, CharField
 from django import forms
 from django.db import models
+from rest_framework_simplejwt.tokens import BlacklistedToken, OutstandingToken
 
 
 class UserAdminConfig(UserAdmin):
@@ -27,6 +28,4 @@ class UserAdminConfig(UserAdmin):
     )
 
 
-# First unregister
-admin.site.unregister(User)
 admin.site.register(User, UserAdminConfig)

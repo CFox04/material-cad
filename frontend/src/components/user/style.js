@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        "padding-top": "10em",
+        paddingTop: "20vh",
     },
     avatar: {
         margin: theme.spacing(1),
@@ -32,6 +32,10 @@ const useStyles = makeStyles((theme) => ({
     },
     submit: {
         margin: theme.spacing(3, 0, 2),
+    },
+    error: {
+        padding: "0.5em",
+        color: theme.palette.error.main,
     },
 }));
 

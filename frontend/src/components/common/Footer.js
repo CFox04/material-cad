@@ -21,7 +21,8 @@ const useStyles = makeStyles((theme) => ({
         fontSize: "1.5em",
         marginTop: "0.25em",
         color: theme.palette.text.hint,
-        left: theme.spacing(3),
+        cursor: "pointer",
+        left: 0,
     },
 }));
 
@@ -31,7 +32,16 @@ function Footer() {
     return (
         <div className={classes.div}>
             <Typography className={classes.text} variant="body2" align="center">
-                <FontAwesomeIcon icon={faDiscord} className={classes.icon} />
+                <Link
+                    rel="noopener"
+                    href="https://discord.gg/qsyFThqper"
+                    target="_blank"
+                >
+                    <FontAwesomeIcon
+                        icon={faDiscord}
+                        className={classes.icon}
+                    />
+                </Link>
                 {"Copyright © "}
                 <Link color="inherit" href="#">
                     Sunnyvale Roleplay
