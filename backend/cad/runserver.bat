@@ -1,3 +1,3 @@
-..\.env\Scripts\activate.ps1
+..\.env\Scripts\activate.bat
 python manage.py runserver
 pause
